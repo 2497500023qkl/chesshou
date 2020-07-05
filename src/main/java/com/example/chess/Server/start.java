@@ -1,6 +1,7 @@
 package com.example.chess.Server;
 
 import com.example.chess.Piece.piece;
+import com.example.chess.User.user;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

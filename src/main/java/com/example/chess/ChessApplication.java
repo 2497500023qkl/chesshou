@@ -1,20 +1,20 @@
 package com.example.chess;
 
-import com.example.chess.Server.initialization;
-import com.example.chess.Server.receive;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.IOException;
+import javax.annotation.PostConstruct;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.BitSet;
+import java.util.TimeZone;
 
 @SpringBootApplication
+@MapperScan("com.example.chess.Mapper")
 public class ChessApplication {
-
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args){
 		SpringApplication.run(ChessApplication.class, args);
-//		initialization i=new initialization();
-//		i.getiInitialization();
-//		receive r=new receive(i);
 	}
 
 }
